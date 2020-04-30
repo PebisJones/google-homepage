@@ -1,50 +1,76 @@
 body {
-    background-color: #f5f5f5;
-}
-
-#homepage-navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-rows: 1fr 17fr 1fr;
 }
 
 ul {
-    list-style-type: none;
-    margin: 22px 0 0 0;
-    padding: 0;
+    padding: 0px;
 }
 
 li {
-    display: inline;
+    list-style-type: none;
 }
 
-li a{
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a {
     text-decoration: none;
-    color: #000000;
+    color: black;
+    font-size: 13px;
 }
 
 .left-navbar-item {
     float: left;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .right-navbar-item {
     float: right;
-    padding-right: 15px;
+    padding-right: 20px;
+}
+
+nav {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 5px;
 }
 
 #center-content {
     display: flex;
-    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 200px;
 }
 
-#homepage-navbar {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+footer {
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: #f2f2f2;
+    border-top: solid 1px #e4e4e4;
+}
+
+footer a {
+    color: #5f6368;
+}
+
+#apps {
+    width: 20px;
+    height: 20px;
+    padding-bottom: 0px;
+}
+
+#profile {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
 }
